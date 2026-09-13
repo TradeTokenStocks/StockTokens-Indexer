@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+name: envio-indexer
+disable_default_cross_chain: true
+chains:
+- id: 11155111
+  start_block: 0
+  contracts:
+  - name: TokenizedStock
+    address:
+    - "0x3a4fCeF090332aFcf648b4A3aE448DF942eA122F"
+    - "0xDCE0231bb5F5CA2AD0557cDba042D627Aaa56384"
+    - "0x9811d8A34E6A5aB3d58A7B2f6715B202a35397ee"
+    - "0x1cA92bE359377F1FC4754557e0E013dad593826C"
+    events:
+    - event: MultiplierUpdated(uint256 newMultiplier)

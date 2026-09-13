@@ -1,0 +1,6 @@
+type TokenizedStock_MultiplierUpdated {
+    id: ID!
+    newMultiplier: BigInt!
+    contractAddress: String!
+    blockNumber: BigInt!
+}
